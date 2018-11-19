@@ -3,7 +3,7 @@
   <head>
     <title>Local Kitchen</title>
     <meta charset="UTF-8">
-    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="myViewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/logo_icon.ico"/>
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -223,29 +223,32 @@
     </div>
 
     <!-- No display recipe elements -->
-    <div class="recipe1">
+    <div class="recipe_preset">
       <img src="/images/spaghetti.jpg" alt="">
       <h4>Spaghetti Sauce with Basil</h4>
       <div class="heart"><img src="/images/heart_outline.svg" alt="Add to Favorites"></div>
     </div>
 
-    <div class="recipe2">
+    <div class="recipe_preset">
       <img src="/images/baked_veg.jpg" alt="">
       <h4>Absolutely Delicous Baked Root Vegetables</h4>
       <div class="heart"><img src="/images/heart_outline.svg" alt="Add to Favorites"></div>
     </div>
 
-    <div class="recipe3">
+    <div class="recipe_preset">
       <img src="/images/steak.jpg" alt="">
-      <h4>Sumptuous New York Strip Steak with Bartlett Pear Glaze and Heirloom As...</h4>
+      <h4>Sumptuous New York Strip Steak with Bartlett Pear Glaze and Heir...</h4>
       <div class="heart"><img src="/images/heart_outline.svg" alt="Add to Favorites"></div>
     </div>
 
-    <div class="recipe4">
+    <div class="recipe_preset">
       <img src="/images/pancakes.jpg" alt="">
       <h4>Berry Buttermilk Pancakes</h4>
       <div class="heart"><img src="/images/heart_outline.svg" alt="Add to Favorites"></div>
     </div>
 
     <script src="/auto_fill.js"></script>
+    <script>
+      window.onload = autofill;
+    </script>
   </body>
