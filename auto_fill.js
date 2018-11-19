@@ -7,7 +7,7 @@ function autofill(){
     var max=4;
     var random = Math.floor(Math.random() * (+max - +min)) + +min;
 
-    //Fill recipe with random recipe
+    //Fill recipe class with random recipe
     var num = i + 1;
 
     document.getElementByClassName('recipe:nth-of-type(' + num + ')').innerHTML = document.getElementByClassName('recipe' + random + ')').innerHTML;

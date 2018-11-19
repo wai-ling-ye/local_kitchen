@@ -377,12 +377,22 @@ header .content .search_box svg {
   grid-row: 1 / span 2;
   overflow: hidden;
   position: relative;
-  width: 660px;
+}
+
+.feat_recipe::after {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0,0,0,0));
+  height: 100px;
+  position: absolute;
+    top: 0;
+    left: 0;
+  width: 100%;
 }
 
 .feat_recipe img {
-  height: auto;
-  width: 660px;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .feat_recipe .heart img {
@@ -391,6 +401,7 @@ header .content .search_box svg {
   position: absolute;
     top: 20px;
     right: 20px;
+  z-index: 2;
 }
 
 .feat_recipe h3 {
@@ -431,11 +442,43 @@ header .content .search_box svg {
   float: right;
   line-height: 1.2;
   margin: 1rem 1rem 0 0;
-  max-width: 270px;
+  max-width: 20vw;
 }
 
 .popular_recipes h6 {
   margin-left: 50px;
+}
+
+/* Recipe Style */
+.recipe {
+  height: 270px;
+  position: relative;
+}
+
+.recipe img {
+  height: auto;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.recipe::after {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0,0,0,0));
+  height: 50px;
+  position: absolute;
+    top: 0;
+    left: 0;
+  width: 100%;
+}
+
+.recipe .heart img {
+  height: 24px;
+  position: absolute;
+    top: 10px;
+    right: 10px;
+  width: 24px;
+  z-index: 2;
 }
 
 /* Footer */
