@@ -1,7 +1,7 @@
 function autofill(){
   var total = document.getElementsByClassName('recipe').length;
 
-  for (i=0; i <= total; i++) {
+  for (i=0; i < total; i++) {
     //generate random number between 0 and 3
     var min=0;
     var max=4;

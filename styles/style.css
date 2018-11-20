@@ -48,6 +48,7 @@ h5 {
   color: #646464;
   font-family: "Open Sans", sans-serif;
   font-size: 14pt;
+  padding-bottom: .5rem;
 }
 
 h6 {
@@ -152,13 +153,13 @@ nav p {
   display: inline-block;
   position: absolute;
     top: 10px;
-    right: 430px;
+    right: 410px;
 }
 
 .location {
   position: absolute;
   top: 8px;
-    right: 325px;
+    right: 300px;
 }
 
 .location p {
@@ -185,7 +186,7 @@ button p {
   color: #ffffff;
   display: inline-block;
   position: relative;
-  top: -8px;
+  top: -10px;
 }
 
 .shopping_cart {
@@ -224,10 +225,17 @@ header {
   overflow: hidden;
 }
 
+header .grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 100%;
+  margin: 0 50px;
+  overflow: hidden;
+}
+
 header .content {
-  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,0));
-  float: right;
-  margin-right: calc(50px + 10vw);
+  background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3), rgba(0,0,0,.3), rgba(0,0,0,0));
+  grid-column: 3 / span 4;
   padding-top: 10vh;
   text-align: center;
 }
@@ -235,7 +243,12 @@ header .content {
 header .content .button {
   background-color: rgba(43,136,0,1);
   background-color: var(--green);
+  display: inline-block;
   margin: 2rem auto 2rem auto;
+}
+
+header .content .button a {
+  padding: .7rem 2rem 0 2rem;
 }
 
 header .search_box {
@@ -354,7 +367,6 @@ header .content .search_box svg {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 1rem;
-  margin: 0 50px;
 }
 
 .browse_bar .button {
@@ -373,7 +385,7 @@ header .content .search_box svg {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-row-gap: 2rem;
   margin: 0 50px 50px 50px;
 }
 
@@ -462,7 +474,6 @@ header .content .search_box svg {
 
 /* Recipe Style */
 .recipe {
-  height: 270px;
   position: relative;
 }
 
@@ -538,4 +549,43 @@ footer .copyright p {
 
 .recipe_preset {
   display: none;
+}
+
+@media screen and (max-width: 1440px) {
+
+  h2 {
+    font-size: 24pt;
+  }
+
+  h3 {
+    font-size: 16pt;
+  }
+
+  h4 {
+    font-size: 14pt;
+  }
+
+  h5 {
+    font-size: 12pt;
+  }
+
+  h6 {
+    font-size: 12pt;
+  }
+
+  p {
+    font-size: 12pt;
+  }
+
+  .button a {
+    font-size: 12pt;
+  }
+
+  .feat_recipe .quick_info_seg {
+    padding: .5rem;
+  }
+
+  .feat_recipe .quick_info_seg img {
+    width: 50px;
+  }
 }
